@@ -53,21 +53,22 @@
      position: relative;
      max-width: 100%;
      width: 800px;
-     height: auto;
 
  }
 
- .middle-row .content-div {
-     position: absolute;
-     background-color: rgb(245, 241, 241);
-     top: 200px;
-     left: 33%;
-     z-index: 2;
-     border-radius: 10px;
-     width: 800px;
-     display: flex;
-     flex-wrap: wrap;
+ .content-div {
+    
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 12px;
+    /* margin-top: 390px !important; */
+    margin-top: -180px !important;
+    margin-left: 370px !important;
+    width: 75% !important;
 
+ }
+ .img-fluid{
+    height: 400px;
  }
 
  .ai-img {
@@ -101,7 +102,7 @@
 
  .last-container {
      background-color: #7C4EE4;
-     width: 1400px;
+     width: 800px;
      max-width: 100%;
      height: 500px;
  }
@@ -120,14 +121,32 @@
      text-align: center;
  }
 
- .last-list {
-     margin-left: 500px;
-     text-align: center;
-     display: flex;
-     list-style: none;
-     gap: 20px;
- }
+  /* Footer */
+    .footer-links a {
+        font-size: 14px;
+        margin: 8px;
+        display: inline-block;
+        text-decoration: none;
+        color: #150E06;
+    }
+ 
 
+@media screen and (max-width: 1422px) {
+  body {
+     overflow-x: hidden !important;
+  }
+  .content-div {
+     margin-left: 0 !important;
+     margin-top: 20px !important;
+     width: 100% !important;
+  }
+  .ai-img{
+    margin: 0 auto !important;
+    position: static !important;
+    width: 712px !important;
+    height: 456px !important;
+  }
+}
 
  @media only screen and (max-width: 1250px) {
      .middle-row {
@@ -156,10 +175,7 @@
      }
 
 
-     .middle-row {
-         max-width: 100%;
-         width: 6500px;
-     }
+     
  }
 
  @media (max-width: 1000px) {
@@ -201,7 +217,52 @@
          flex-wrap: wrap;
          display: flex;
          height: 900px;
+         width: 500px;
+     }
+
+ } 
+ @media only screen and (max-width: 517px) {
+     .header-row {
+         flex-wrap: wrap;
+         display: flex;
+         height: 900px;
          width: 450px;
      }
 
  }
+  @media only screen and (max-width: 465px) {
+     .header-row {
+         flex-wrap: wrap;
+         display: flex;
+         height: 900px;
+         width: 380px;
+     }
+
+ }
+  @media only screen and (max-width: 400px) {
+     .header-row {
+         flex-wrap: wrap;
+         display: flex;
+         height: 900px;
+         width: 350px;
+     }
+
+ }
+   @media only screen and (max-width: 380px){
+.last-container{
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+height: 700px;
+}
+.last-container .input{
+    width: 200px;
+}
+}
+ @media only screen and (max-width: 376px){
+.header-row{
+    width: 250px;
+    margin-right: 10px;
+}
+}
+   
